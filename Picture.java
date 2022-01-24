@@ -37,6 +37,9 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
+            sun2.moveVertical(-30);
+            sun2.makeVisible();
+            
             wall.moveHorizontal(-140);
             wall.moveVertical(20);
             wall.changeSize(120);
@@ -59,7 +62,7 @@ public class Picture
             sun.changeSize(80);
             sun.makeVisible();
             
-            sun2.makeVisible();
+       
             
             drawn = true;
         }
